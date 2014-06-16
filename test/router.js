@@ -24,7 +24,7 @@ module.exports = function (request, response){
   //in hosts?
   for (var i in hosts){
     if (domain.match(new RegExp(i))!==null){
-      dns_query.direct_answer(domain,
+      dns_query.direct_answer(request,
                               hosts[i],
                               response);
       return;
@@ -35,7 +35,7 @@ module.exports = function (request, response){
   for (var j in config){
     if (domain.match(new RegExp(j))!==null){
       console.log(domain, j);
-      dns_query.answer(domain,
+      dns_query.answer(request,
                        config[j],
                        response
                       );

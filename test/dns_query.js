@@ -1,20 +1,18 @@
 var dns = require('native-dns');
 
-function answer(domain, server_info, response){
-  var question = dns.Question({
-    name: domain,
+function answer(request, server_info, response){
+  //var question = dns.Question({
+    //name: domain,
     //type: 'A',
     //type: 'CNAME',
-  });
+  //});
   var req = dns.Request({
-    question: question,
+    question: request.question[0],
     server: server_info,
     timeout: 1000,
   });
 
   req.on('message', function (err, answer) {
-    console.log(err);
-    console.log(answer);
     answer.answer.forEach(function (a) {
       response.answer.push(a);
     });
@@ -30,9 +28,9 @@ function answer(domain, server_info, response){
   req.send();
 }
 
-function direct_answer (domain, ip, response){
+function direct_answer (request, ip, response){
   response.answer.push(dns.A({
-    name: domain,
+    name: request.question[0].name,
     address: ip,
     ttl: 600,
   }));
