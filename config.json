@@ -1,0 +1,10 @@
+{
+  "twitter|twimg":
+    { "address": "60.190.217.130", "port": 53, "type": "udp" },
+  "google|ytimg|youtube":
+    { "address": "8.8.8.8", "port": 53, "type": "tcp" },
+  ".*":
+    { "address": "223.5.5.5", "port": 53, "type": "udp" },
+  "comment":
+    "依据正则匹配, 优先级从高到低"
+}

@@ -3,7 +3,8 @@ var dns = require('native-dns');
 function answer(domain, server_info, response){
   var question = dns.Question({
     name: domain,
-    type: 'A',
+    //type: 'A',
+    //type: 'CNAME',
   });
   var req = dns.Request({
     question: question,
@@ -12,16 +13,17 @@ function answer(domain, server_info, response){
   });
 
   req.on('message', function (err, answer) {
+    console.log(err);
+    console.log(answer);
     answer.answer.forEach(function (a) {
-      response.answer.push(dns.A({
-        name: domain,
-        address: a.address,
-        ttl: 600,
-      }));
+      response.answer.push(a);
     });
   });
 
   req.on('end', function () {
+    response.send();
+  });
+  req.on('timeout', function () {
     response.send();
   });
 

@@ -1,5 +1,6 @@
 var dns_query = require('./dns_query'),
 fs = require('fs');
+var config = require('../config');
 
 //read hosts
 var hosts = [];
@@ -29,11 +30,24 @@ module.exports = function (request, response){
       return;
     }
   }
-  dns_query.answer(domain,
-                   { address: '114.114.114.114', port: 53, type: 'udp' },
-                   response
-                  );
+
+  //query
+  for (var j in config){
+    if (domain.match(new RegExp(j))!==null){
+      console.log(domain, j);
+      dns_query.answer(domain,
+                       config[j],
+                       response
+                      );
+      return;
+    }
+  }
 };
+
+//  dns_query.answer(domain,
+//                   { address: '114.114.114.114', port: 53, type: 'udp' },
+//                   response
+//                  );
 //  dns_query.direct_answer(domain,
 //                          '2.2.2.2',
 //                          response
