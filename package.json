@@ -1,10 +1,10 @@
 {
   "name": "simplednsproxy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple DNS proxy.",
   "main": "./lib/dns_server.js",
   "bin": {
-    "simplednsproxy": "simplednsproxy.js"
+    "simplednsproxy": "./bin/simplednsproxy.js"
   },
   "directories": {
     "test": "test"
