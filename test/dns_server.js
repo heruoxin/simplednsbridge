@@ -2,16 +2,15 @@ var dns = require('native-dns');
 
 var server = dns.createServer();
 
-server.on('request', function (request, response) {
 
-  var domain = request.question[0].name;
+function answer_dns(domain, response, server_info){
   var question = dns.Question({
     name: domain,
     type: 'A',
   });
   var req = dns.Request({
     question: question,
-    server: { address: '114.114.114.114', port: 53, type: 'udp' },
+    server: server_info,
     timeout: 1000,
   });
 
@@ -30,9 +29,14 @@ server.on('request', function (request, response) {
   });
 
   req.send();
+}
 
+server.on('request', function (request, response) {
+  answer_dns(request.question[0].name,
+             response,
+             { address: '114.114.114.114', port: 53, type: 'udp' }
+            );
 });
-
 server.on('error', function (err, buff, req, res) {
   console.log(err.stack);
 });
