@@ -13,7 +13,8 @@
   ],
   "akadns|apple|itunes":
     [
-      { "address": "223.6.6.6", "port": 53, "type": "udp" }
+      { "address": "199.91.73.222", "port": 3389, "type": "udp" },
+      { "address": "178.79.131.110", "port": 53, "type": "udp" }
   ],
   ".*":
     [
