@@ -1,10 +1,25 @@
 {
   "twitter|twimg":
-    { "address": "60.190.217.130", "port": 53, "type": "udp" },
-  "google|ytimg|youtube":
-    { "address": "8.8.8.8", "port": 53, "type": "tcp" },
+    [
+      { "address": "60.190.217.130", "port": 53, "type": "udp" }
+  ],
+  "google|ytimg|youtube|facebook|stackoverflow":
+    [
+      { "address": "8.8.4.4", "port": 53, "type": "tcp" },
+      { "address": "208.67.222.222", "port": 5353, "type": "tcp" },
+      { "address": "199.91.73.222", "port": 3389, "type": "tcp" },
+      { "address": "168.95.1.1", "port": 53, "type": "tcp" },
+      { "address": "42.159.25.35", "port": 53, "type": "udp" }
+  ],
+  "akadns|apple|itunes":
+    [
+      { "address": "223.6.6.6", "port": 53, "type": "udp" }
+  ],
   ".*":
-    { "address": "223.5.5.5", "port": 53, "type": "udp" },
+    [
+      { "address": "223.5.5.5", "port": 53, "type": "udp" },
+      { "address": "114.114.114.114", "port": 53, "type": "udp" }
+  ],
   "comment":
     "依据正则匹配, 优先级从高到低"
 }
