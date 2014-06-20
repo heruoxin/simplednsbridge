@@ -12,6 +12,6 @@ The `hosts` file has the highest priority.
 
 For Mac users, put the `com.1ittlecup.simplednsproxy.plist` into `/Library/LaunchDaemons/`.
 
-And run `launchctl load /Library/LaunchDaemons/com.1ittlecup.simplednsproxy.plist` to load it at startup.
+And run `sudo launchctl load /Library/LaunchDaemons/com.1ittlecup.simplednsproxy.plist` to load it at startup.
 
 For Linux users,I recommend [PM2](https://github.com/unitech/pm2)
