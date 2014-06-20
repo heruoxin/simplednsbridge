@@ -1,5 +1,5 @@
 {
-  "google|ytimg|youtube|facebook|dropbox|stackoverflow":
+  "google|ytimg|youtube|facebook|dropbox|stackoverflow|github":
     [
       { "address": "8.8.4.4", "port": 53, "type": "tcp" },
       { "address": "199.91.73.222", "port": 3389, "type": "tcp" },
