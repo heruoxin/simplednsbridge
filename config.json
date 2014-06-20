@@ -1,15 +1,10 @@
 {
-  "twitter|twimg":
+  "google|ytimg|youtube|facebook|dropbox|stackoverflow":
     [
-      { "address": "60.190.217.130", "port": 53, "type": "udp" }
-  ],
-  "google|ytimg|youtube|facebook|stackoverflow":
-    [
-      { "address": "8.8.4.4", "port": 53, "type": "tcp" },
-      { "address": "208.67.222.222", "port": 5353, "type": "tcp" },
       { "address": "199.91.73.222", "port": 3389, "type": "tcp" },
-      { "address": "168.95.1.1", "port": 53, "type": "tcp" },
-      { "address": "42.159.25.35", "port": 53, "type": "udp" }
+      { "address": "208.67.222.222", "port": 5353, "type": "tcp" },
+      { "address": "8.8.4.4", "port": 53, "type": "tcp" },
+      { "address": "168.95.1.1", "port": 53, "type": "tcp" }
   ],
   "akadns|apple|itunes":
     [
