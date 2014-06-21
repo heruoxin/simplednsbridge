@@ -12,13 +12,15 @@
   ],
   "akadns|apple|itunes":
     [
-      { "address": "199.91.73.222", "port": 3389, "type": "udp" },
+      { "address": "199.91.73.222", "port": 53, "type": "udp" },
       { "address": "178.79.131.110", "port": 53, "type": "udp" }
   ],
   ".*":
     [
       { "address": "223.5.5.5", "port": 53, "type": "udp" },
-      { "address": "114.114.114.114", "port": 53, "type": "udp" }
+      { "address": "223.6.6.6", "port": 53, "type": "udp" },
+      { "address": "114.114.114.114", "port": 53, "type": "udp" },
+      { "address": "114.114.115.115", "port": 53, "type": "udp" }
   ],
   "comment":
     "依据正则匹配, 优先级从高到低"
