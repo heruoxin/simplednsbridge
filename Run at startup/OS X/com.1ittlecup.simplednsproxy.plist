@@ -14,8 +14,8 @@
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/tmp/com.1ittlecup.simplednsproxy.stderr</string>
+	<string>/tmp/com.1ittlecup.simplednsproxy.stderr.log</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/com.1ittlecup.simplednsproxy.stdout</string>
+	<string>/tmp/com.1ittlecup.simplednsproxy.stdout.log</string>
 </dict>
 </plist>
