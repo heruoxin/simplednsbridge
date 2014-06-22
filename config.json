@@ -4,11 +4,7 @@
       { "address": "8.8.4.4", "port": 53, "type": "tcp" },
       { "address": "8.8.8.8", "port": 53, "type": "tcp" },
       { "address": "208.67.222.222", "port": 5353, "type": "tcp" },
-      { "address": "208.67.220.220", "port": 443, "type": "tcp" },
-      { "address": "199.91.73.222", "port": 53, "type": "tcp" },
-      { "address": "178.79.131.110", "port": 53, "type": "tcp" },
-      { "address": "168.95.1.1", "port": 53, "type": "tcp" },
-      { "address": "168.95.192.1", "port": 53, "type": "tcp" }
+      { "address": "208.67.220.220", "port": 443, "type": "tcp" }
   ],
   "akadns|apple|itunes":
     [
