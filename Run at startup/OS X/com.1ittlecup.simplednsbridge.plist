@@ -5,17 +5,17 @@
 	<key>KeepAlive</key>
 	<true/>
 	<key>Label</key>
-	<string>com.1ittlecup.simplednsproxy</string>
+	<string>com.1ittlecup.simplednsbridge</string>
 	<key>ProgramArguments</key>
 	<array>
 		<string>/usr/local/bin/node</string>
-		<string>/usr/local/bin/simplednsproxy</string>
+		<string>/usr/local/bin/simplednsbridge</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>StandardErrorPath</key>
-	<string>/tmp/com.1ittlecup.simplednsproxy.stderr.log</string>
+	<string>/tmp/com.1ittlecup.simplednsbridge.stderr.log</string>
 	<key>StandardOutPath</key>
-	<string>/tmp/com.1ittlecup.simplednsproxy.stdout.log</string>
+	<string>/tmp/com.1ittlecup.simplednsbridge.stdout.log</string>
 </dict>
 </plist>

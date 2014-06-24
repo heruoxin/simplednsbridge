@@ -1,10 +1,10 @@
 {
-  "name": "simplednsproxy",
+  "name": "simplednsbridge",
   "version": "0.1.6",
-  "description": "A simple DNS proxy.",
+  "description": "A simple DNS bridge to help you get the right DNS answer in China.",
   "main": "./lib/dns_server.js",
   "bin": {
-    "simplednsproxy": "./bin/simplednsproxy.js"
+    "simplednsbridge": "./bin/simplednsbridge.js"
   },
   "directories": {
     "test": "test"
