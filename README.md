@@ -1,6 +1,6 @@
-#simplednsproxy
+#simplednsbridge
 
-A simple DNS proxy. It can forward DNS through TCP/UDP with the specific port.
+A simple DNS bridge. It can forward DNS through TCP/UDP with the specific port.
 
 ##Config
 
@@ -8,10 +8,10 @@ The `hosts` file has the highest priority.
 
 ##Use age
 
-`simplednsproxy `
+`simplednsbridge `
 
-For Mac users, put the `com.1ittlecup.simplednsproxy.plist` into `/Library/LaunchDaemons/`.
+For Mac users, put the `com.1ittlecup.simplednsbridge.plist` into `/Library/LaunchDaemons/`.
 
-And run `sudo launchctl load /Library/LaunchDaemons/com.1ittlecup.simplednsproxy.plist` to load it at startup.
+And run `sudo launchctl load /Library/LaunchDaemons/com.1ittlecup.simplednsbridge.plist` to load it at startup.
 
 For Linux users,I recommend [PM2](https://github.com/unitech/pm2)
