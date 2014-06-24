@@ -10,7 +10,8 @@
     "test": "test"
   },
   "dependencies": {
-    "native-dns": "^0.6.1"
+    "native-dns": "^0.6.1",
+    "nedb": "^0.10.5"
   },
   "devDependencies": {},
   "scripts": {
