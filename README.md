@@ -4,14 +4,12 @@ A simple DNS bridge. It can forward DNS through TCP/UDP with the specific port.
 
 ##Config
 
-The `hosts` file has the highest priority.
+You can edit the `config.json` and `hosts`.
 
 ##Use age
 
 `simplednsbridge `
 
-For Mac users, put the `com.1ittlecup.simplednsbridge.plist` into `/Library/LaunchDaemons/`.
+For Mac users, run `sudo run.sh` in `./Run\ at\ startup/OS\ X/`.
 
-And run `sudo launchctl load /Library/LaunchDaemons/com.1ittlecup.simplednsbridge.plist` to load it at startup.
-
-For Linux users,I recommend [PM2](https://github.com/unitech/pm2)
+For Linux users, you can use [PM2](https://github.com/unitech/pm2)
